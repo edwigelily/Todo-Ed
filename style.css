@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #FCE3D1;
+
+}
+main{
+    height: 90vh;
+    width: 60vw;
+    border-radius: 25% 10%;
+    box-shadow: 10px 5px 5px 5px gray;
+    background-color: #ffffff;
+}
+
+header{
+    
+    height: 30%;
+    display: grid;
+    grid-template-areas: 
+                        "h1 "
+                        "div1"
+                        "div2";
+    grid-template-rows: 1fr 1fr 1fr;
+}
+h1{
+   
+    grid-area: h1;
+    text-align: center;
+}
+div.ajouter{
+    grid-area: div1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input#tache_ajoute{
+    width: 40vw;
+    height: 3vh;
+    margin-right: 10px;
+}
+div.message-erreur{
+    grid-area: div2;
+
+}
+hr{
+    background-color: black;
+    margin: 0;
+}
+section{
+    height: 60%;
+}
+h2{
+    text-align: center;
+}
+div.liste-taches{
+    padding: 10px;
+}
+footer{
+    height: 5%;
+}
