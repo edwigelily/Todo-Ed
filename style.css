@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -8,7 +11,8 @@ body{
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-color: #FCE3D1;
+    background-color: #F3E3D3;
+    font-family: 'Asap', sans-serif;
 
 }
 main{
@@ -16,7 +20,7 @@ main{
     width: 60vw;
     border-radius: 25% 10%;
     box-shadow: 10px 5px 5px 5px gray;
-    background-color: #ffffff;
+    background-color: #FCF8EB;
 }
 
 header{
@@ -33,6 +37,9 @@ h1{
    
     grid-area: h1;
     text-align: center;
+    padding-top: 10px;
+    font-size: 2.5em;
+    color: #B38C61;
 }
 div.ajouter{
     grid-area: div1;
@@ -44,6 +51,9 @@ input#tache_ajoute{
     width: 40vw;
     height: 3vh;
     margin-right: 10px;
+    padding: 5px 10px;
+    font-size: 1em;
+
 }
 div.message-erreur{
     grid-area: div2;
@@ -54,14 +64,43 @@ hr{
     margin: 0;
 }
 section{
-    height: 60%;
+    height: 55%;
+    padding: 20px;
+    
 }
 h2{
     text-align: center;
+    font-size: 1.9em;
+    color: #B38C61;
 }
 div.liste-taches{
     padding: 10px;
+    background-color: ;
+}
+form{
+    margin: 25px;
+}
+input[type=checkbox]:checked+label{
+
+    color: #B8B8B8;
+    text-decoration: line-through ;   
+}
+label{
+    font-size: 1.3em;
+    padding: 3px;
+}
+button{
+    padding: 5px 10px;
+    font-size: 1em;
+    font-family: 'Asap', sans-serif;
+    background-color: #CC8C64;
+    color: #fff;
+    border: solid 1px #000;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
 }
 footer{
-    height: 5%;
+    height: 10%;
+    text-align: center;
 }
