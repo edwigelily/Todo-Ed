@@ -21,6 +21,9 @@ main{
     border-radius: 25% 10%;
     box-shadow: 10px 5px 5px 5px gray;
     background-color: #FCF8EB;
+
+    overflow: hidden;
+
 }
 
 header{
@@ -73,6 +76,16 @@ h2{
     font-size: 1.9em;
     color: #B38C61;
 }
+button#compte{
+    /* padding: 0 5px 0 5px; */
+    font-size: 1.5em;
+    font-weight: 900;
+    margin-left: 20%;
+    background-color:  #FCF8EB;
+    border: none;
+    
+}
+
 div.liste-taches{
     padding: 10px;
 }
@@ -119,6 +132,8 @@ button[type=submit]:hover{
     cursor: pointer;
     text-decoration: none;
     transition-duration: 1s;
+    border: solid 1px #EDCE2F;
+
 }
 button.supprimer{
     padding: 5px 10px;
@@ -131,8 +146,27 @@ button.supprimer{
     cursor: pointer;
     text-decoration: none;
 }
+button.supprimer:hover{
+    padding: 5px 10px;
+    font-size: 1em;
+    font-family: 'Asap', sans-serif;
+    background-color: #CC0C1C;
+    color: #fff;
+    border: solid 1px rgb(248, 247, 247);
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    border: solid 1px #EDCE2F;
+    transition-duration: 1s;
+}
+div.debut{
+    display: flex;
+    justify-content: center;
 
+}
 footer{
     height: 10%;
     text-align: center;
+    background-color: #EFDDC2;
+    padding-top: 12px;
 }
