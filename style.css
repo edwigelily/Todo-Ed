@@ -39,7 +39,7 @@ h1{
     text-align: center;
     padding-top: 10px;
     font-size: 2.5em;
-    color: #B38C61;
+    color: #DEA397;
 }
 div.ajouter{
     grid-area: div1;
@@ -101,12 +101,24 @@ button[type=submit]{
     padding: 5px 10px;
     font-size: 1em;
     font-family: 'Asap', sans-serif;
-    background-color: #CC8C64;
+    background-color: #B48171;
     color: #fff;
     border: solid 1px #000;
-    border-radius: 6px;
+    border-radius: 10px;
     cursor: pointer;
     text-decoration: none;
+}
+button[type=submit]:hover{
+    padding: 5px 10px;
+    font-size: 1em;
+    font-family: 'Asap', sans-serif;
+    background-color: #fff;
+    color: #B48171;
+    border: solid 1px #000;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    transition-duration: 1s;
 }
 button.supprimer{
     padding: 5px 10px;
