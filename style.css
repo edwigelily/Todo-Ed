@@ -98,11 +98,7 @@ input[type=checkbox] {
     width: 17px;
     cursor: pointer; 
 }
-input[type=checkbox]:checked+label{
 
-    color: #B8B8B8;
-    text-decoration: line-through ;   
-}
 ul{
 
     font-size: 1.3em;

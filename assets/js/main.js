@@ -23,7 +23,7 @@ const listeTaches = [//tableau des object contenant des infos sur une tâche
 const formulaire = document.forms["ajouter"];
 const ul = document.getElementById("liste")
 
-//parcourir le tableau et gérer ll'affichage des tâches 
+//parcourir le tableau et gérer l'affichage des tâches 
 listeTaches.forEach( index =>{
    
     ul.innerHTML += `<li ${index.status ? 'class= "barrer"' : ''}>
