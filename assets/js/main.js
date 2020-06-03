@@ -1,6 +1,3 @@
-/**
- * 
- */
 const listeTaches = [//tableau des object contenant des infos sur une tâche
     {
         libelle:" Je dois finir le Positionnement de ToDo Ed",
