@@ -44,7 +44,7 @@ h1{
     font-size: 2.5em;
     color: #DEA397;
 }
-div.ajouter{
+form[name='ajouter']{
     grid-area: div1;
     display: flex;
     justify-content: center;
@@ -103,13 +103,21 @@ input[type=checkbox]:checked+label{
     color: #B8B8B8;
     text-decoration: line-through ;   
 }
-label{
+ul{
+
     font-size: 1.3em;
     padding: 3px;
+    font-family: 'Asap', sans-serif;
 }
-div.entre{
-    margin: 5px;
+li{
+    list-style-type: none;
 }
+.barrer {
+    text-decoration: line-through;
+    color: #B8B8B8;
+    font-style: italic;
+}
+
 button[type=submit]{
     padding: 5px 10px;
     font-size: 1em;
@@ -146,19 +154,7 @@ button.supprimer{
     cursor: pointer;
     text-decoration: none;
 }
-button.supprimer:hover{
-    padding: 5px 10px;
-    font-size: 1em;
-    font-family: 'Asap', sans-serif;
-    background-color: #CC0C1C;
-    color: #fff;
-    border: solid 1px rgb(248, 247, 247);
-    border-radius: 6px;
-    cursor: pointer;
-    text-decoration: none;
-    border: solid 1px #EDCE2F;
-    transition-duration: 1s;
-}
+
 div.debut{
     display: flex;
     justify-content: center;
