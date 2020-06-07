@@ -15,16 +15,17 @@ const listeTaches = [//tableau des object contenant des infos sur une tâche
         libelle:"Me documenter sur les evenements",
         status: true
     }
-]
+];
 
 const formulaire = document.forms["ajouter"];
-const ul = document.getElementById("liste")
+const ul = document.getElementById("liste");
+
 
 //parcourir le tableau et gérer l'affichage des tâches 
-listeTaches.forEach( index =>{
-   
-    ul.innerHTML += `<li ${index.status ? 'class= "barrer"' : ''}>
-                        <input type="checkbox"> ${index.libelle}
+listeTaches.forEach( (tache, index) =>{
+
+    ul.innerHTML += `<li id="${index}" ${tache.status ? 'class= "barrer"' : ''}>
+                        <input type="checkbox"> ${tache.libelle}
                         <button class="supprimer" >
                         <i class="fas fa-trash-alt"></i>
                         </button>
@@ -32,7 +33,6 @@ listeTaches.forEach( index =>{
 });
 
 //écouter l'évenement submit
-
 formulaire.addEventListener('submit', function(e){
     
     e.preventDefault();//annuler le comportement par défaut
@@ -44,13 +44,12 @@ formulaire.addEventListener('submit', function(e){
         libelle: valeurInput,
         status : false
     });
-
-    ul.innerHTML += `<li>
+    
+    ul.innerHTML += `<li id ="${listeTaches.length}">
                         <input type="checkbox"> ${valeurInput}
                         <button class="supprimer" >
                         <i class="fas fa-trash-alt"></i>
                         </button>
                     </li>`
-
 });
 

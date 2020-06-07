@@ -76,29 +76,24 @@ h2{
     font-size: 1.9em;
     color: #B38C61;
 }
-button#compte{
-    /* padding: 0 5px 0 5px; */
+span#compte{
     font-size: 1.5em;
     font-weight: 900;
     margin-left: 20%;
     background-color:  #FCF8EB;
     border: none;
-    
 }
-
 div.liste-taches{
     padding: 10px;
 }
 form{
     margin: 25px;
 }
-
 input[type=checkbox] {
     height: 17px;
     width: 17px;
     cursor: pointer; 
 }
-
 ul{
 
     font-size: 1.3em;
@@ -113,6 +108,7 @@ li{
     color: #B8B8B8;
     font-style: italic;
 }
+
 
 button[type=submit]{
     padding: 5px 10px;
