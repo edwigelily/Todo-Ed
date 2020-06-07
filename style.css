@@ -60,6 +60,10 @@ input#tache_ajoute{
 }
 div.message-erreur{
     grid-area: div2;
+    color: #EB0404;
+    font-style: italic;
+    font-family: 'Asap', sans-serif;
+    text-align: center;
 
 }
 hr{

@@ -49,16 +49,27 @@ formulaire.addEventListener('submit', function(e){
 
     e.preventDefault();
 
+    let divMessage = document.querySelector("div.message-erreur");
     let valeurInput = document.getElementById("tache_ajoute");
     
-    taches.unshift({
+    if(valeurInput.value != "" && valeurInput.value != " "){
+        
+        taches.unshift({
 
-        libelle: valeurInput.value,
-        status: false
-    });
+            libelle: valeurInput.value,
+            status: false
+        });
+        divMessage.textContent ="";
+
+    }
+    else{
+        divMessage.textContent = "Attention vous devez rentrer une tâche non vide !!"
+    }
+    
     valeurInput.value = "";
     render(taches, elements);
 
 });
+
 
 
