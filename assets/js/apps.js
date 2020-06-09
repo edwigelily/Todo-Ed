@@ -23,7 +23,6 @@ const ul = document.getElementById("liste");
 const compte = document.getElementById("compte")
 const elements = [ul, compte];
 const formulaire = document.forms["ajouter"];
-const btnSupprimer = document.querySelectorAll("button.supprimer");
 
 render(taches, elements);
 
@@ -72,8 +71,20 @@ formulaire.addEventListener('submit', function(e){
 
 });
 
-btnSupprimer.addEventListener('click', function(){
-  
- return true
+const btnSupprimer = document.querySelectorAll("button.supprimer");
+
+
+btnSupprimer.forEach(function(button){
+
+    button.addEventListener('click', function(){
+   
+        const li = this.parentNode;
+    
+        taches.splice(li.dataset.id,1);
+
+        render(taches, elements);
+
+    });
 });
+
 
