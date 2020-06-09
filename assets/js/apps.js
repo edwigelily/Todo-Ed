@@ -23,6 +23,7 @@ const ul = document.getElementById("liste");
 const compte = document.getElementById("compte")
 const elements = [ul, compte];
 const formulaire = document.forms["ajouter"];
+const btnSupprimer = document.querySelectorAll("button.supprimer");
 
 render(taches, elements);
 
@@ -71,5 +72,8 @@ formulaire.addEventListener('submit', function(e){
 
 });
 
-
+btnSupprimer.addEventListener('click', function(){
+  
+ return true
+});
 
