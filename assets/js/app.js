@@ -1,4 +1,4 @@
-import{render} from "./fonctions.js";
+import { render } from "./fonctions.js";
 
 const taches = [//tableau des object contenant des infos sur une tâche
     {
@@ -26,25 +26,8 @@ const formulaire = document.forms["ajouter"];
 
 render(taches, elements);
 
-const inputCheck = document.querySelectorAll('li > input[type = "checkbox"]');
-
 // evenements 
 
-inputCheck.forEach(function (input){
-
-    input.addEventListener('change', function(){
-
-        const li = this.parentNode;
-
-        let tache = taches[li.dataset.id];
-
-        tache.status = this.checked;
-        
-        taches[li.dataset.id] = tache;
-
-        render(taches, elements);
-    });
-});
 formulaire.addEventListener('submit', function(e){
 
     e.preventDefault();
@@ -52,17 +35,17 @@ formulaire.addEventListener('submit', function(e){
     let divMessage = document.querySelector("div.message-erreur");
     let valeurInput = document.getElementById("tache_ajoute");
     
-    if(valeurInput.value != "" && valeurInput.value != " "){
-        
+    if(valeurInput.value != "" && valeurInput.value != " ")
+    {    
         taches.unshift({
 
             libelle: valeurInput.value,
             status: false
         });
         divMessage.textContent ="";
-
     }
-    else{
+    else
+    {
         divMessage.textContent = "Attention vous devez rentrer une tâche non vide !!"
     }
     
@@ -71,20 +54,6 @@ formulaire.addEventListener('submit', function(e){
 
 });
 
-const btnSupprimer = document.querySelectorAll("button.supprimer");
 
-
-btnSupprimer.forEach(function(button){
-
-    button.addEventListener('click', function(){
-   
-        const li = this.parentNode;
-    
-        taches.splice(li.dataset.id,1);
-
-        render(taches, elements);
-
-    });
-});
 
 
